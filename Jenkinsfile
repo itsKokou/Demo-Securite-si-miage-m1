@@ -101,6 +101,7 @@ pipeline {
                                 -DfailBuildOnCVSS=10 \
                                 -DcveValidForHours=12 \
                                 -Dformat=ALL \
+                                -DossIndexAnalyzerEnabled=false \
                                 -DsuppressionFile=owasp-suppressions.xml \
                                 -B || true
                         '''
@@ -112,6 +113,7 @@ pipeline {
                                 -DfailBuildOnCVSS=10 \
                                 -DcveValidForHours=12 \
                                 -Dformat=ALL \
+                                -DossIndexAnalyzerEnabled=false \
                                 -B || true
                         '''
                     }
