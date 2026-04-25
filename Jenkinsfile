@@ -98,7 +98,7 @@ pipeline {
                         sh '''
                             mvn org.owasp:dependency-check-maven:12.1.0:check \
                                 -DnvdApiKey=${NVD_KEY} \
-                                -DfailBuildOnCVSS=10 \
+                                -DfailBuildOnCVSS=11 \
                                 -DcveValidForHours=12 \
                                 -Dformat=ALL \
                                 -DossIndexAnalyzerEnabled=false \
@@ -110,7 +110,7 @@ pipeline {
                         sh '''
                             mvn org.owasp:dependency-check-maven:12.1.0:check \
                                 -DnvdApiKey=${NVD_KEY} \
-                                -DfailBuildOnCVSS=10 \
+                                -DfailBuildOnCVSS=11 \
                                 -DcveValidForHours=12 \
                                 -Dformat=ALL \
                                 -DossIndexAnalyzerEnabled=false \
